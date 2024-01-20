@@ -3,7 +3,6 @@ import { useQuery } from "@tanstack/react-query";
 import axios, { AxiosPromise } from "axios";
 import { useFilter } from "./useFilter";
 import { mountQuery } from "@/utils/graphql-filters";
-import { FilterType } from "@/types/filter-types";
 import { useDeferredValue } from "react";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL as string;
@@ -27,8 +26,4 @@ export function useProducts(){
     return {
         data: filteredProducts
     }
-}
-
-function getCategory(type: FilterType) {
-    throw new Error("Function not implemented.");
 }
