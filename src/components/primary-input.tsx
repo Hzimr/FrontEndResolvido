@@ -1,7 +1,7 @@
 'use client'
 
 import styled from "styled-components"
-import { SearchIcon } from "./search-icon"
+import { SearchIcon } from "./icons/search-icon"
 import { InputHTMLAttributes } from "react"
 
 export const PrimaryInput = styled.input`
