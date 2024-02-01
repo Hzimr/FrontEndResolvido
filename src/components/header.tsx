@@ -19,7 +19,7 @@ const TagHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 10rem;
+  padding: 0.75rem 1.5rem;
 
   > div {
     display: flex;
@@ -27,13 +27,21 @@ const TagHeader = styled.header`
     justify-content: center;
     gap: 24px;
   }
+
+  @media (min-width: ${props => props.theme.desktopBreakpoint}) {
+    padding: 1.25rem 8rem;
+  }
 `
 
 const Logo = styled.a`
   color: var(--logo-color);
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 150%;
+
+  @media(min-width: ${props => props.theme.desktopBreakpoint}px) {
+    font-size: 40px;
+  }
 `
 
 export function Header(props: HeaderProps){
