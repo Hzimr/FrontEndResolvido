@@ -9,7 +9,8 @@ interface DefaultProvidersProps {
 }
 
 const theme = {
-  desktopBreakpoint: "768px"
+  desktopBreakpoint: "1024px",
+  tabletBreakpoint: "768px",
 }
 
 export function DefaultProviders({ children }: DefaultProvidersProps) {
